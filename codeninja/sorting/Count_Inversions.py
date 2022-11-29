@@ -8,13 +8,13 @@ def merge(arr, low, mid, high):
     inversion = 0
     k = low
     while i < len(left) and j < len(right):
-        if left[i] > right[j]:
-            arr[k] = right[j]
-            j += 1
-        else:
+        if left[i] <= right[j]:
             arr[k] = left[i]
             i += 1
-            inversion += 1
+        else:
+            arr[k] = right[j]
+            j += 1
+            inversion += mid-i + 1
         k += 1
 
     while i < len(left):
@@ -46,7 +46,7 @@ def getInversions(arr, n):
 # Taking inpit using fast I/O.
 def takeInput():
     n = 5
-    arr = [2, 5, 1, 3, 4]
+    arr = [1, 1, 2, 2, 3]
     return arr, n
 
 
