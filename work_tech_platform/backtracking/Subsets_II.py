@@ -1,5 +1,9 @@
 """
 https://workat.tech/problem-solving/practice/subsets-ii
+
+https://leetcode.com/problems/subsets-ii/description/
+
+https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=11
 https://www.youtube.com/watch?v=Vn2v6ajA7U0
 """
 class Solution:

@@ -1,14 +1,16 @@
+from typing import List
+
+
 class Solution:
-    def maxProduct(self, nums):
-        max_prod = float('-inf')
-        prod = 1
-        for i in range(len(nums)):
-            if nums[i] > 0:
-                prod *= nums[i]
-            else:
-                max_prod = max(max_prod, prod)
-                prod = 1
-        return max(max_prod, prod)
+    def maxProduct(self, nums: List[int]) -> int:
+        global_max = prev_max = prev_min = nums[0]
+        for num in nums[1:]:
+            curr_min = min(prev_max * num, prev_min * num, num)
+            curr_max = max(prev_max * num, prev_min * num, num)
+            global_max = max(global_max, curr_max)
+            prev_max = curr_max
+            prev_min = curr_min
+        return global_max
 
 
 solve = Solution()

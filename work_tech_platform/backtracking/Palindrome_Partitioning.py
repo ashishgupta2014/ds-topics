@@ -2,6 +2,7 @@
 https://workat.tech/problem-solving/practice/palindromic-partitioning
 
 https://www.youtube.com/watch?v=3jvWodd7ht0
+https://www.youtube.com/watch?v=WBgsABoClE0
 """
 class Solution:
     res = []
