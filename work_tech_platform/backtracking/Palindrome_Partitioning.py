@@ -33,6 +33,7 @@ class Solution:
 solve = Solution()
 
 print(solve.getPartitions(s='aabc'))
+print(solve.getPartitions(s='abcdc'))
 
 
 
