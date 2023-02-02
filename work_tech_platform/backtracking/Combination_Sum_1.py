@@ -33,3 +33,4 @@ solve = Solution()
 arr =  [1, 2]
 t = 4
 print(solve.combinationSum(arr, t))
+print(solve.combinationSum(A=[2, 3, 6, 7], val=7))
